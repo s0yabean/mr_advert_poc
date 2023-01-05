@@ -1,0 +1,24 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    jsmith:
+      email: jsmith@gmail.com
+      name: John Smith
+      password: 123
+      tokens: 0
+    rbriggs:
+      email: rbriggs@gmail.com
+      name: Rebecca Briggs
+      password: 456
+      tokens: 0
+    tony:
+      email: tonytongwa@gmail.com
+      name: tony
+      password: $2b$12$OfH/avhZ4WPpIBpxX1teYOAu.VltnUmcqmcnSKN2zEvO/RxF3qiwO
+      tokens: 1671
+preauthorized:
+  emails:
+  - melsby@gmail.com
