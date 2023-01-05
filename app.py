@@ -5,6 +5,7 @@ import os
 import openai
 import streamlit_authenticator as stauth
 import yaml
+from yaml import SafeLoader
 
 openai.api_key = st.secrets["openai_api_key"]
 
@@ -135,7 +136,7 @@ def get_tokens(config, username):
 
 def init_auth():
     with open('./config.yaml') as file:
-        config = yaml.load(file)
+        config = yaml.load(file, Loader=SafeLoader)
 
         authenticator = stauth.Authenticate(
             config['credentials'],
